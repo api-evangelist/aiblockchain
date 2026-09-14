@@ -1,7 +1,18 @@
 aid: aiblockchain
-name: Aiblockchain
-description: 'Aiblockchain is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: Ai-Blockchain
+description: >-
+  Ai-Blockchain (also styled AI BlockChain, AIBC) is a Hoboken, New Jersey enterprise blockchain and
+  artificial-intelligence software company founded in 2014 by Drew Hingorani and Stephen Reed. It builds a
+  proprietary, patented private distributed ledger — US Patent 10,579,974, "Systems, methods, and program
+  products for a distributed digital asset network with rapid transaction settlements" — that the company
+  describes as gas-free, energy efficient and immutable, with artificial-intelligence agents managing the
+  chain itself. Its marketed service lines are private blockchain with instant settlement, smart payment
+  and transaction platforms, secure streaming and content distribution / digital rights management,
+  AI-powered virtual assistants and customer-service chatbots, cloud cost optimization, a LIMS healthcare
+  product, and custom AI + blockchain application development. It sells enterprise engagements and
+  consulting rather than a self-serve developer product: as of September 2026 the company publishes no
+  developer portal, API reference, SDK, or machine-readable API contract on any host it controls.
+image: https://ai-blockchain.com/assets/img/logo-dark.webp
 url: https://raw.githubusercontent.com/api-evangelist/aiblockchain/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,14 @@ created: '2026-09-14'
 modified: '2026-09-14'
 tags:
 - Company
+- Blockchain
+- Distributed Ledger
+- Artificial Intelligence
+- Enterprise Software
+- Digital Rights Management
+- Payments
+- Consulting
+position: Producing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,42 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://equityzen.com/company/aiblockchain
+  url: https://ai-blockchain.com/
+- type: DomainSecurity
+  url: security/aiblockchain-domain-security.yml
+- type: LLMsTxt
+  url: llms/aiblockchain-llms.txt
+- type: Plans
+  url: plans/aiblockchain-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/aiblockchain-rate-limits.yml
+x-enrichment:
+  date: '2026-09-14'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Ai-Blockchain sells enterprise blockchain and AI consulting engagements through a contact
+    form and ships no developer surface at all — ai-blockchain.com is a purchased React marketing
+    template deployed without SPA rewrites, so even its own /services and /contact-us routes
+    return a hard 404 to a direct fetch; every named /.well-known/, /openapi.json, /swagger.json,
+    /apis.json and /llms.txt path 404s on both ai-blockchain.com and www; and the one deliberately
+    configured developer-shaped host, docs.ai-blockchain.com, is a dangling CNAME to ghs.google.com
+    that answers a Google 404 with no TLS certificate at all.
+  evidence:
+  - url: https://ai-blockchain.com/
+    status: 200
+  - url: https://ai-blockchain.com/openapi.json
+    status: 404
+  - url: https://ai-blockchain.com/.well-known/agent-card.json
+    status: 404
+  - url: https://ai-blockchain.com/llms.txt
+    status: 404
+  - url: https://ai-blockchain.com/services
+    status: 404
+  - url: http://docs.ai-blockchain.com/
+    status: 404
+  checked: '2026-09-14'

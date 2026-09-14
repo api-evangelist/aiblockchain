@@ -1,0 +1,9 @@
+generated: '2026-09-14'
+method: searched
+source: https://ai-blockchain.com/
+limit_count: 0
+note: >-
+  No published API, therefore no published rate limits, no documented response headers
+  (X-RateLimit-*, RateLimit-*, Retry-After) and no documented exhaustion status code.
+  Recorded as an honest zero.
+rate_limits: []

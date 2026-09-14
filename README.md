@@ -1,4 +1,4 @@
-# Aiblockchain
+# Ai-Blockchain
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,16 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aiblockchain is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/aiblockchain
+Ai-Blockchain (also styled AI BlockChain, AIBC) is a Hoboken, New Jersey enterprise blockchain and
+artificial-intelligence software company founded in 2014 by Drew Hingorani and Stephen Reed. It builds a
+patented private distributed ledger (US Patent 10,579,974) that the company describes as gas-free, energy
+efficient and immutable, with AI agents managing the chain, and sells private-blockchain settlement, smart
+payment platforms, secure streaming / digital rights management, AI assistants, cloud cost optimization and
+custom application development as enterprise engagements.
+
+**No public API surface.** As of 2026-09-14 Ai-Blockchain publishes no developer portal, API reference, SDK,
+webhook catalog, or machine-readable contract (OpenAPI, AsyncAPI, GraphQL SDL, Postman, protobuf, WSDL) on any
+host it controls. See `apis.yml` `x-coverage` for the probed evidence.
+
+- Website: https://ai-blockchain.com/
+- Secondary-market listing: https://equityzen.com/company/aiblockchain
